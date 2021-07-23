@@ -1,15 +1,19 @@
 print ("\n" "Farei o cálculo fatorial de um número de sua escolha!" "\n" "(Deve ser um número natural)")
-flagError = True
-while flagError:
+flag_error = True
+while flag_error:
+    print ("Caso queira sair, envie N")
     valor_de_n = input("Qual o número desejado? ")
     try:
-        float_n = float(valor_de_n)
-        n = int(valor_de_n)
-        p = 1
-        componentes = list(range(n, 0, -1))
-        for n in componentes:
-            p = p * n
-        print ("O resultado foi:", p)
-        flagError = False
+        if valor_de_n == ("N"):
+            flag_error = False
+        else:
+            float_n = float(valor_de_n)
+            n = int(valor_de_n)
+            p = 1
+            components = list(range(n, 0, -1))
+            for n in components:
+                p = p * n
+            print ("O resultado foi:", p)
+            flag_error = False
     except:
-        print ("caracteres, vírgulas e espaços não são aceitos")
+        print ("\n" "caracteres, vírgulas e espaços não são aceitos")
