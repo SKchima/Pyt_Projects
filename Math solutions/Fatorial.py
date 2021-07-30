@@ -7,7 +7,6 @@ while flag_error:
         if valor_de_n == ("N"):
             flag_error = False
         else:
-            float_n = float(valor_de_n)
             n = int(valor_de_n)
             p = 1
             components = list(range(n, 0, -1))
