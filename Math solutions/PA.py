@@ -13,7 +13,7 @@ while flag_error:
             componentes = range(1, int_numero, 1)
             p = 0
             n = 0
-            for float_numero in componentes:
+            for int_numero in componentes:
                 n = n + 1
                 p = 1 + p + (float_razao * n)
             print ("O resultado foi:", p + 1)
